@@ -38,22 +38,30 @@ justify-content: center;
 .useless-fact-container {
   display:flex;
   justify-content: center;
-  padding: 2%
+  padding: 5%;
 }
 
 .icon-container {
+  padding: 2px,0px;
+  margin: 2px, 0px;
   display:flex;
   justify-content:space-between;
 }
 
 
-
+.my-favorites-title-container {
+  margin: 6vh;
+}
 
 h3{
+  margin: 3vh, 20vw;
   text-align: center;
   color:red;
   font-size: x-large;
-}
+
+  }
+
+
 
 
   #heart-icon{
@@ -65,14 +73,25 @@ h3{
     display: block;
     width: 2vw;
   }
-  .favorite-text{
+  /*.favorite-text{
 display: block;
   }
   .next-text{
 display: block;
+  }*/
+
+a{
+  color: var(--button-color);
+}
+
+
+  .palabra-favoritos{
+    margin: 3vh 3vw;
+    font-size: x-large;
+
   }
   .scrollable {
-    height: 300px; /* Altura deseada */
+    height: 100px; /* Altura deseada */
     overflow-y: scroll; /* Habilitar el scroll vertical */
   }
 
