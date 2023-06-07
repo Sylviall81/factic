@@ -61,9 +61,6 @@ h3{
 
   }
 
-
-
-
   #heart-icon{
     display: flex;
     width: 2vw;
@@ -91,8 +88,10 @@ a{
 
   }
   .scrollable {
-    height: 100px; /* Altura deseada */
+    margin: 5vh 15vw;
+    height: 50vh; /* Altura deseada */
     overflow-y: scroll; /* Habilitar el scroll vertical */
+    width: 75vw;
   }
 
   .footer {
