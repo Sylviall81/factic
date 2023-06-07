@@ -1,0 +1,7 @@
+
+
+
+.scrollable {
+    height: 300px; /* Altura deseada */
+    overflow-y: scroll; /* Habilitar el scroll vertical */
+  }
