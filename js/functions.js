@@ -13,4 +13,8 @@ fetch('https://uselessfacts.jsph.pl/api/v2/facts/random')
   let audio = document.getElementById(id);
   audio.play();
 }
+function pauseSound(id){
+  let audio = document.getElementById(id);
+  audio.pause();
+}
 
