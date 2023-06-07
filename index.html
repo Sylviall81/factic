@@ -19,7 +19,9 @@
             <img id="logo" src="./images/Factic-removebg-preview.png"> </div>
     </header>
     <main>
-        <button class="button" id="sound-button" onclick="makeSound('nyan-cat-sound')")">Sonido : ON 🔊</button>
+        <button class="button" id="sound-button-on" onclick="makeSound('nyan-cat-sound')")">ON 🔊</button>
+        <span> | </span>
+        <button class="button" id="sound-button-off" onclick="pauseSound('nyan-cat-sound')")">OFF 🔇</button>
         <div class="gif-container">
             <audio id="nyan-cat-sound" src="./sounds/Nyan Cat Sound Effect.mp3"></audio>
             <iframe src="https://gifer.com/embed/H5z" width=500 height=360.000 frameBorder="0" allowFullScreen></iframe>
@@ -81,7 +83,6 @@
                         Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
                     </li>
                 </ul>
-
             </div>
     </main>
     <footer class="footer">
