@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,55 +8,86 @@
     , initial-scale=1.0">
     <title>Uselessfacts</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+
 </head>
+
 <body>
-    <header>
-        <div class="header"><img src="./images/rainbow.jpg" alt=""></div>
-        <div class="logo"><img src="./images/Factic-removebg-preview.png"></div>
+    <header class="header">
+
+        <div class="logo">
+            <img id="logo" src="./images/Factic-removebg-preview.png"> </div>
 
     </header>
 
 
 
+
+
+
+
+
     <main>
-       <div>
-        <iframe src="https://gifer.com/embed/H5z" width=480 height=480.000 frameBorder="0" allowFullScreen></iframe>
-    </div>
 
-    <div>
-        <h3 id="selected-useless-fact">Lorem ipsum dolor sit amet, consectetur  adipiscing elit, sed do eiusmod tempor incididunt  ut labore et dolore magna ali</h3>
-        
-        <img src="./icons/heart.png" alt="" id="heart-icon">
-        <p>Favoritos</p>
-        <img src="./icons/next.png" alt="" id="next-icon">
-        <p>Next</p>   
-    </div>
-    
-    <section>
-        <h2 class="title-favorites">❤️Mis favoritos❤️</h2>
-    </section>
+        <div class="gif-container">
+            <iframe src="https://gifer.com/embed/H5z" width=500 height=360.000 frameBorder="0" allowFullScreen></iframe>
+        </div>
 
-    <div class="scrollable">
-        <ul class="favorites-list">
-            <li class="list-item">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</ul>
+        <div class="useless-fact-container">
+            <h3 id="selected-useless-fact">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna ali</h3>
+        </div>
+        <div class="icon-container">
+
+            <span class="icon-button"></span>
+            <!--<img src="./icons/heart.png" alt="" id="heart-icon">-->
+            <a onclick="" href=""><p class = "palabra-favoritos">❤️ Favoritos   </p></a>
+            <!--<p class="favorite-text">Favoritos</p>-->
+            </span>
+
+            <span class="icon-button">
+               <!--<p class="next-text">Next</p>-->
+               <a onclick="" href=""><p class = "palabra-favoritos">   Next ➡️</p></a>
+               <!--
+               <img src="./icons/next.png" alt="" id="next-icon">--> 
+
+            </span>
+        </div>
+
+        <section>
+            <h2 class="title-favorites">❤️Mis favoritos❤️</h2>
+        </section>
+
+        <div class="scrollable">
+            <ul class="favorites-list">
+                <li class="list-item">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de
+                    texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando
+                    un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y
+                    los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años,
+                    sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente
+                    igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales
+                    contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo
+                    Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+            </ul>
             </ul>
 
-    </div>
-    
+        </div>
+
     </main>
-    
 
 
-    <footer>
-        <p>© 2023 Hecho por Sylvia Llorente y Neema Balolebwami</p>
-        <div class="footer"><img src="./images/rainbow.jpg" alt=""></div>
 
+    <footer class="footer">
+
+        <p class="footer-text">© 2023 Hecho por Sylvia Llorente y Neema Balolebwami</p>
     </footer>
     <script src=""></script>
-  
-    
-    
+
+
+
 </body>
+
 </html>

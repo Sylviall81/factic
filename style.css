@@ -1,11 +1,94 @@
+
 *{
   margin: 0;
   padding: 0;
-text-decoration: none;
+  text-decoration: none;
+  font-family: 'Comfortaa', cursive;
+}
+
+:root{
+  --bg-color: #F4F0EF ;
+  --button-color: #172B4D;
+
 }
 
 
-.scrollable {
+.header {
+width: 100vw;
+height: 22vh;
+background-image: url(./images/rainbow.jpg);
+  background-repeat: repeat-x;
+/*background-color: var(--bg-color);*/
+border: solid black;
+display:flex;
+justify-content: center;
+}
+
+#logo{
+  width: 15vw;
+  align-content: center;
+}
+
+.gif-container  {
+  display:flex;
+  justify-content: center;
+
+}
+
+.useless-fact-container {
+  display:flex;
+  justify-content: center;
+  padding: 2%
+}
+
+.icon-container {
+  display:flex;
+  justify-content:space-between;
+}
+
+
+
+
+h3{
+  text-align: center;
+  color:red;
+  font-size: x-large;
+}
+
+
+  #heart-icon{
+    display: flex;
+    width: 2vw;
+    height: 4vh;
+  }
+  #next-icon{
+    display: block;
+    width: 2vw;
+  }
+  .favorite-text{
+display: block;
+  }
+  .next-text{
+display: block;
+  }
+  .scrollable {
     height: 300px; /* Altura deseada */
     overflow-y: scroll; /* Habilitar el scroll vertical */
+  }
+
+  .footer {
+    width: 100vw;
+    height: 22vh;
+    border: solid black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-image: url(./images/rainbow.jpg);
+    background-repeat: repeat-x;
+    flex-direction: column-reverse;
+  }
+
+  .footer-text{
+    
+font-size: 1rem;
   }
