@@ -8,3 +8,13 @@ fetch('https://uselessfacts.jsph.pl/api/v2/facts/random')
   
   //.then(data => console.log(data.text));
 
+
+  function makeSound(id) {
+  let audio = document.getElementById(id);
+  audio.play();
+}
+
+function playMusic(){
+  
+}
+
