@@ -11,35 +11,37 @@
   padding: 0;
   text-decoration: none;
   font-family: 'Comfortaa', cursive;
+}
+
+main {
   background-color: var(--bg-color)
 }
 
-
-
-
 .header {
 width: 100vw;
-height: 22vh;
+height: 25vh;
 background-image: url(./images/rainbow.jpg);
   background-repeat: repeat-x;
-/*background-color: var(--bg-color);*/
 border: solid black;
 display:flex;
 justify-content: center;
 }
 
 #logo{
+  background-color:none;
   width: 15vw;
   align-content: center;
 }
 
 #sound-button {
-  margin-left: 2vw;
+margin-left: 2vw;
 }
+
 .button{
   font-size: x-large;
   border:none;
   background-color: var(--bg-color);
+  color: var(--button-text-color);
 }
 
 
@@ -66,7 +68,6 @@ justify-content: center;
 
 .my-favorites-title-container {
   margin: 8vh;
-  
 }
 
 h3{
