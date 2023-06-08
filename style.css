@@ -44,7 +44,6 @@ body {
   cursor: pointer;
 }
 
-
 .gif-container {
   display: flex;
   justify-content: center;
@@ -79,27 +78,7 @@ h3 {
   color: var(--title-color);
   font-size: x-large;
   width: 100vh;
-
-
 }
-
-#heart-icon {
-  display: flex;
-  width: 2vw;
-  height: 4vh;
-}
-
-#next-icon {
-  display: block;
-  width: 2vw;
-}
-
-/*.favorite-text{
-display: block;
-  }
-  .next-text{
-display: block;
-  }*/
 
 a {
   color: var(--button-text-color);
@@ -114,12 +93,15 @@ a {
 .scrollable {
   margin: 5vh 15vw;
   height: 20vh;
-  /* Altura deseada */
   overflow-y: scroll;
-  /* Habilitar el scroll vertical */
   width: 75vw;
   margin-bottom: 15vh;
   background-color: white;
+}
+
+li {
+  list-style-type: disclosure-closed;
+  list-style-position: inside;
 }
 
 .footer {
