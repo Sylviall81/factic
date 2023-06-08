@@ -1,37 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UselessFacts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
+    <header class="header">
+        <div class="logo">
+            <img id="logo" src="./images/Factic-removebg-preview.png"> </div>
 
-  <a onclick= makeSound() href=""> 
-    img
+    </header>
+    <main>
+        <button class="button" id="sound-button-on" onclick="makeSound('nyan-cat-sound')" )">ON 🔊</button>
+        <span> | </span>
+        <button class="button" id="sound-button-off" onclick="pauseSound('nyan-cat-sound')" )">OFF 🔇</button>
 
-  </a>
-<div>
-    <iframe src="https://gifer.com/embed/H5z" width=480 height=480.000 frameBorder="0" allowFullScreen></iframe>
-</div>    
+        <audio id="nyan-cat-sound" src="./sounds/Nyan Cat Sound Effect.mp3"></audio>
 
-        <h3 id="selected-useless-fact" ></h3>
-    </div>
-    <a onclick="addFav()"><img class="icon" src="./icons/heart.png" alt=""> <span >Favoritos</span></a>
-<section>
-    <h2> ❤️ Mis favoritos ❤️ </h2>
+        <section id="intro">
+            <h1>Welcome!</h1>
+            <h4>A very usefull website for really useless facts! </h4>
+        </section>
 
-    <div id="fav-container">
-        <p class="fav-fact">
+        <div class="gif-container">
 
-        </p>
+            <iframe src="https://gifer.com/embed/H5z" width=500 height=360.000 frameBorder="0" allowFullScreen></iframe>
 
-    </div>
+        </div>
 
-</section>
-    
-    <script src="./js/operativa.js"></script>
+        <div class="useless-fact-container">
+            <h3 id="selected-useless-fact"></h3>
+        </div>
+        <div class="icon-container">
+            <button class="button" onclick="getMyFavorites()"> ❤️ Favoritos</button>
+            <button class="button" onclick="nextFact()"> Next ➡️ </button>
+        </div>
+        <section class="my-favorites-title-container">
+            <h2 class="title-favorites">⭐Mis favoritos⭐</h2>
+        </section>
+        <div id="scrollable-container" class="scrollable">
+            <ul class="favorites-list"></ul>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer-text">© 2023 Hecho por Sylvia Llorente y Neema Balolebwami</p>
+    </footer>
+    <script src=""></script>
+    <script src="./js/functions.js"></script>
 </body>
+
 </html>

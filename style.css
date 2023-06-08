@@ -1,0 +1,141 @@
+:root {
+  --bg-color: #F4F0EF;
+  --button-text-color: #172B4D;
+  --title-color: #DC332E;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Comfortaa', cursive;
+}
+
+body {
+  background-color: white;
+}
+
+.header {
+  width: 100vw;
+  height: 20vh;
+  background-image: url(./images/rainbow.jpg);
+  background-repeat: repeat-x;
+  display: flex;
+  justify-content: center;
+  background-color: #F4F0EF;
+}
+
+#logo {
+  background-color: none;
+  width: 20vw;
+  align-content: center;
+  position: relative;
+  
+}
+
+#sound-button {
+  margin-left: 2vw;
+}
+
+.button {
+  font-size: x-large;
+  border: none;
+  background-color: white;
+  color: var(--button-text-color);
+  cursor: pointer;
+}
+
+#sound-button-on, #sound-button-off {
+font-size: 1rem;
+margin-left: 1.5vw;
+}
+
+#intro{
+  margin-top: 2vh;;
+  display: inline-block;
+  margin-left: 27vw;
+  text-align: center;
+}
+
+
+.gif-container {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+}
+
+.useless-fact-container {
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+  margin-bottom: none;
+}
+
+.icon-container {
+  padding: 2px, 0px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: -12vh;
+  width: 90vw;
+  margin-top: 3vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.my-favorites-title-container {
+  margin: 8vh;
+}
+
+h3 {
+  display: inline-block;
+  text-align: center;
+  color: var(--title-color);
+  font-size: x-large;
+  width: 100vh;
+}
+
+a {
+  color: var(--button-text-color);
+}
+
+
+.palabra-favoritos {
+  margin: 3vh 3vw;
+  font-size: x-large;
+}
+
+.scrollable {
+  margin: 5vh 15vw;
+  height: 20vh;
+  overflow-y: scroll;
+  width: 75vw;
+  margin-bottom: 15vh;
+  background-color: white;
+}
+
+li {
+  margin-top: 1vh;
+  list-style-type: disclosure-closed;
+  list-style-position: inside;
+}
+
+.footer {
+  width: 100vw;
+  height: 22vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-image: url(./images/rainbow.jpg);
+  background-repeat: repeat-x;
+  background-color: var(--bg-color);
+  flex-direction: column-reverse;
+}
+
+h2 {
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 1rem;
+}
