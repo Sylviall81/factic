@@ -31,30 +31,20 @@ function getMyFavorites() {
   let favoriteFact = document.getElementById('selected-useless-fact').innerText
   console.log(favoriteFact);
   arrayFavFacts.push(favoriteFact);
-  console.log(arrayFavFacts);
-  printFavorites(arrayFavFacts);
+  printFavorite(favoriteFact);
+}
 
-  function printFavorites(array) {
 
-    /*const scrollableContainer = document.getElementById('scrollable-container');*/
-    const favoritesList = document.getElementsByClassName("favorites-list");
-    //const favoritesItems = document.getElementsByClassName("list-items");
+  function printFavorite(string) {
+    const favoritesList = document.getElementsByClassName('favorites-list')[0]
+    //for (let i = 0; i < array.length; i++) 
+//      let index = i;
 
-    for (let i = 0; i < array.length; i++) {
-      let index = i;
-  
       let listItem = document.createElement('li');
       listItem.className = 'list-items';
-      listItem.innerText = array[index];
+      listItem.innerText = string;
       //listItem.textContent = array[index];
-
-      listItem.appendChild(favoritesList);
-    }
-
-
-
-
+      favoritesList.appendChild(listItem);
   }
 
 
-}
