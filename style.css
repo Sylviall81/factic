@@ -21,7 +21,6 @@ body {
   height: 25vh;
   background-image: url(./images/rainbow.jpg);
   background-repeat: repeat-x;
-  border: solid black;
   display: flex;
   justify-content: center;
   background-color: #F4F0EF;
@@ -42,13 +41,13 @@ body {
   border: none;
   background-color: white;
   color: var(--button-text-color);
+  cursor: pointer;
 }
 
 
 .gif-container {
   display: flex;
   justify-content: center;
-
 }
 
 .useless-fact-container {
@@ -63,6 +62,10 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: -12vh;
+  width: 90vw;
+  margin-top: 3vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
 
@@ -122,13 +125,12 @@ a {
 .footer {
   width: 100vw;
   height: 22vh;
-  border: solid black;
   text-align: center;
   display: flex;
   flex-direction: column;
   background-image: url(./images/rainbow.jpg);
   background-repeat: repeat-x;
-background-color: var(--bg-color);
+  background-color: var(--bg-color);
   flex-direction: column-reverse;
 }
 
