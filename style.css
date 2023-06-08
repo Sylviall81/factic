@@ -18,7 +18,7 @@ body {
 
 .header {
   width: 100vw;
-  height: 25vh;
+  height: 20vh;
   background-image: url(./images/rainbow.jpg);
   background-repeat: repeat-x;
   display: flex;
@@ -28,8 +28,10 @@ body {
 
 #logo {
   background-color: none;
-  width: 15vw;
+  width: 20vw;
   align-content: center;
+  position: relative;
+  
 }
 
 #sound-button {
@@ -44,7 +46,21 @@ body {
   cursor: pointer;
 }
 
+#sound-button-on, #sound-button-off {
+font-size: 1rem;
+margin-left: 1.5vw;
+}
+
+#intro{
+  margin-top: 2vh;;
+  display: inline-block;
+  margin-left: 27vw;
+  text-align: center;
+}
+
+
 .gif-container {
+  margin-top: 5vh;
   display: flex;
   justify-content: center;
 }
@@ -66,7 +82,6 @@ body {
   margin-left: 5vw;
   margin-right: 5vw;
 }
-
 
 .my-favorites-title-container {
   margin: 8vh;
@@ -100,6 +115,7 @@ a {
 }
 
 li {
+  margin-top: 1vh;
   list-style-type: disclosure-closed;
   list-style-position: inside;
 }
