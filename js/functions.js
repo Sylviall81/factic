@@ -47,4 +47,8 @@ function getMyFavorites() {
       favoritesList.appendChild(listItem);
   }
 
+  module.exports = {
+    getUselessFact
+};
+
 

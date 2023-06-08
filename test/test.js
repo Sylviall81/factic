@@ -1,7 +1,7 @@
 const nock = require('nock');
 
 // aqui la función que deseo probar
-const { getUselessFact } = require('./tufuncion');
+const { getUselessFact } = require("./js/functions");
 
 // aqui la simulación de la respuesta de la API
 const mockResponse = { text: 'This is a useless fact' };
