@@ -19,71 +19,63 @@
             <img id="logo" src="./images/Factic-removebg-preview.png"> </div>
     </header>
     <main>
-        <button class="button" id="sound-button-on" onclick="makeSound('nyan-cat-sound')")">ON 🔊</button>
+        <button class="button" id="sound-button-on" onclick="makeSound('nyan-cat-sound')" )">ON 🔊</button>
         <span> | </span>
-        <button class="button" id="sound-button-off" onclick="pauseSound('nyan-cat-sound')")">OFF 🔇</button>
+        <button class="button" id="sound-button-off" onclick="pauseSound('nyan-cat-sound')" )">OFF 🔇</button>
         <div class="gif-container">
             <audio id="nyan-cat-sound" src="./sounds/Nyan Cat Sound Effect.mp3"></audio>
             <iframe src="https://gifer.com/embed/H5z" width=500 height=360.000 frameBorder="0" allowFullScreen></iframe>
-            </div>
+        </div>
 
-            <div class="useless-fact-container">
-                <h3 id="selected-useless-fact">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna ali</h3>
-            </div>
-            <div class="icon-container">
-                <!--<span class="icon-button"></span>
-            <img src="./icons/heart.png" alt="" id="heart-icon">  </span>-->
-                <a onclick="" href="">
-                    <p class="palabra-favoritos">❤️ Favoritos </p>
-                </a>
-                <!--<p class="favorite-text">Favoritos</p>-->
+        <div class="useless-fact-container">
+            <h3 id="selected-useless-fact"></h3>
+        </div>
+        <div class="icon-container">
 
-                <!--<span class="icon-button">
-               <p class="next-text">Next</p></span>-->
-                <a onclick="" href="">
-                    <p class="palabra-favoritos"> Next ➡️</p>
-                </a>
-                <!--<img src="./icons/next.png" alt="" id="next-icon">-->
+            <button class= "button" onclick="getMyFavorites()"> ❤️ Favoritos</button>
+            
+            <button class="button" onclick="nextFact()"> Next ➡️ </button>
 
-            </div>
-            <section class="my-favorites-title-container">
-                <h2 class="title-favorites">⭐Mis favoritos⭐</h2>
-            </section>
-            <div class="scrollable">
-                <ul class="favorites-list">
-                    <li class="list-item">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de
-                        texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500,
-                        cuando
-                        un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de
-                        textos y
-                        los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500
-                        años,
-                        sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando
-                        esencialmente
-                        igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las
-                        cuales
-                        contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por
-                        ejemplo
-                        Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
-                    </li>
-                    <li class="list-item">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de
-                        texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500,
-                        cuando
-                        un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de
-                        textos y
-                        los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500
-                        años,
-                        sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando
-                        esencialmente
-                        igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las
-                        cuales
-                        contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por
-                        ejemplo
-                        Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
-                    </li>
-                </ul>
-            </div>
+            
+
+        </div>
+        <section class="my-favorites-title-container">
+            <h2 class="title-favorites">⭐Mis favoritos⭐</h2>
+        </section>
+        <div class="scrollable">
+            <ul class="favorites-list">
+                <li class="list-item">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de
+                    texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500,
+                    cuando
+                    un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de
+                    textos y
+                    los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500
+                    años,
+                    sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando
+                    esencialmente
+                    igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las
+                    cuales
+                    contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por
+                    ejemplo
+                    Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+                </li>
+                <li class="list-item">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de
+                    texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500,
+                    cuando
+                    un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de
+                    textos y
+                    los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500
+                    años,
+                    sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando
+                    esencialmente
+                    igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las
+                    cuales
+                    contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por
+                    ejemplo
+                    Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+                </li>
+            </ul>
+        </div>
     </main>
     <footer class="footer">
         <p class="footer-text">© 2023 Hecho por Sylvia Llorente y Neema Balolebwami</p>
