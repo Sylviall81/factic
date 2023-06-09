@@ -2,7 +2,6 @@
   --bg-color: #F4F0EF;
   --button-text-color: #172B4D;
   --title-color: #DC332E;
-
 }
 
 * {
@@ -28,7 +27,7 @@ main{
   background-repeat: repeat-x;
   display: flex;
   justify-content: center;
-  background-color: #F4F0EF;
+  background-color: var(--bg-color)
 }
 
 #logo {
