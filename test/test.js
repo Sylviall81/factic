@@ -1,20 +1,29 @@
-const nock = require('nock');
+// Import the function you want to test
+const { getUselessFact } = require ("./functions");
 
-// aqui la función que deseo probar
-const { getUselessFact } = require('./tufuncion');
+// Mock the fetch function
+global.fetch = jest.fn(() =>
+  Promise.resolve({
+    json: () =>
+      Promise.resolve({
+        text: 'This is a useless fact',
+      }),
+  })
+);
 
-// aqui la simulación de la respuesta de la API
-const mockResponse = { text: 'This is a useless fact' };
-nock('https://uselessfacts.jsph.pl')
-  .get('/api/v2/facts/random')
-  .reply(200, mockResponse);
+describe('getUselessFact', () => {
+  beforeEach(() => {
+    // Clear the factPlaceHolder before each test
+    document.body.innerHTML = '<div id="selected-useless-fact"></div>';
+  });
 
-// aqui la Ejecucion de la prueba
-test('Obtener un hecho inútil', async () => {
-  // aqui Llamo a la función que deseo probar
-  await getUselessFact();
+  test('should fetch a useless fact and set it in the factPlaceHolder', async () => {
+    // Call the function you want to test
+    await getUselessFact();
 
-  // aqui Realizo las aserciones
-  const factPlaceHolder = document.getElementById('selected-useless-fact');
-  expect(factPlaceHolder.innerHTML).toBe(mockResponse.text);
+    // Check if the factPlaceHolder contains the correct text
+    const factPlaceHolder = document.getElementById('selected-useless-fact');
+    expect(factPlaceHolder.innerHTML).toBe('This is a useless fact');
+  });
 });
+
