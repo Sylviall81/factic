@@ -51,11 +51,13 @@ font-size: 1rem;
 margin-left: 1.5vw;
 }
 
-#intro{
-  margin-top: 2vh;;
-  display: inline-block;
-  margin-left: 27vw;
+#intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  height: 10vh;
 }
 
 
@@ -73,18 +75,26 @@ margin-left: 1.5vw;
 }
 
 .icon-container {
-  padding: 2px, 0px;
+  padding: 10px, 10px;
   display: flex;
   justify-content: space-between;
   margin-top: -12vh;
   width: 90vw;
   margin-top: 3vh;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  margin-left: 2vw;
+  margin-right: 12vw;
 }
 
 .my-favorites-title-container {
   margin: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-favorites {
+  text-align: center;
+  font-size: x-large;
 }
 
 h3 {
@@ -139,3 +149,116 @@ h2 {
 .footer-text {
   font-size: 1rem;
 }
+
+@media (max-width: 600px) {
+  .header {
+    height: 15vh;
+  }
+
+  #logo {
+    width: 100%; 
+    max-width: 500px; 
+    margin-top: 7vh;
+  }
+
+  #intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 10vh;
+  }
+  #intro h1 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem; 
+  }
+  
+  #intro h4 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 0.9rem; 
+  }
+  }
+
+  .icon-container {
+    flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1vh;
+      margin-bottom: 5vh;
+    }
+
+    .button {
+      padding: 1.3rem;  
+      margin-right: 0;  
+      margin-bottom: 2rem;
+    }
+  
+    .icon-container button {
+      margin-bottom: 1vh;
+    }
+  
+    .scrollable {
+      margin: 5vh 5vw;
+      width: 90vw;
+      margin-bottom: 10vh;
+    }
+  
+    .footer {
+      height: 12vh;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center;
+    }
+  
+    .footer-text {
+      font-size: 0.6rem;
+      margin-top: 50px;
+      align-self: center;
+    }
+
+  
+  
+  /* Medium screens */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .header {
+      height: 25vh;
+    }
+  
+    #logo {
+      width: 30vw;
+    }
+  
+    .icon-container {
+      margin-top: 3vh;
+      margin-left: 10vw;
+      margin-right: 10vw;
+    }
+  
+    .scrollable {
+      margin: 5vh 10vw;
+      width: 80vw;
+      margin-bottom: 10vh;
+    }
+  }
+  
+  /* Large screens */
+  @media (min-width: 1024px) {
+    .header {
+      height: 30vh;
+    }
+  }
+  
+    #logo {
+      width: 20vw;
+    }
+  
+   
+  
+  
+  
+  
+  
+  
