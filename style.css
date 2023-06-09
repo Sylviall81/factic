@@ -163,7 +163,6 @@ h2 {
 }
 
 @media (max-width: 600px) {
-  
   .header {
     height: 15vh;
   }
@@ -253,7 +252,7 @@ h2 {
       margin-top: 50px;
       align-self: center;
     }
-
+  }
   
   
   /* Medium screens */
@@ -278,7 +277,7 @@ h2 {
       margin-bottom: 10vh;
     }
   }
-  
+
   /* Large screens */
   @media (min-width: 1024px) {
     .header {
