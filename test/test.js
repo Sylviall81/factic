@@ -1,15 +1,8 @@
 // Import the function you want to test
 const { getUselessFact } = require ("./functions");
 
-// Mock the fetch function
-global.fetch = jest.fn(() =>
-  Promise.resolve({
-    json: () =>
-      Promise.resolve({
-        text: 'This is a useless fact',
-      }),
-  })
-);
+// aqui la función que deseo probar
+const { getUselessFact } = require('./tufuncion');
 
 describe('getUselessFact', () => {
   beforeEach(() => {
