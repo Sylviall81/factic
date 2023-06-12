@@ -26,14 +26,14 @@ JavaScript
 Al abrir la aplicación en tu navegador, nuestro ✨mensajero de las estrellas: 😺 NyanCat ✨ te traerá el hecho curioso 
 mas random y useless que puedas imaginar. Si no estas satisfecho del todo, presiona el botón Next ➡️  para obtener el siguiente 
 useless fact. Si encuentras uno que te guste taaanto que te haga "flipar en colores" o 
-producir un rainbow fart 🌈 como los de nuestro gato mensajero, haz clic en el botón de "Favorito ❤️" y guardalo en tu lista.
+producir un rainbow fart 🌈 como los de nuestro gato mensajero, haz clic en el botón de "Favorites ❤️" y guardalo en tu lista.
 .
-Todos los  favoritos que guardes se iran almacenando en una lista scrollable para que ninguno se te pase!
+Todos los  favoritos que guardes se iran almacenando en la lista scrollable: ⭐ My Favorites ⭐  para que ninguno se te pase!
 
 ⭐ Créditos:
 
-API de Useless Facts: https://uselessfacts.jsph.pl/
-Imagen del gato NyanCat: GIPHY
+- API de Useless Facts: https://uselessfacts.jsph.pl/
+- Imagen del gato NyanCat: GIPHY
 
 
 
