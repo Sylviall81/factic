@@ -1,8 +1,5 @@
 'use strict'
 
-//let uselessFact = "";
-//console.log (getUselessFact('https://uselessfacts.jsph.pl/api/v2/facts/random'));
-
 getUselessFact();
 
 function makeSound(id) {
