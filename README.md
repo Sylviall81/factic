@@ -18,7 +18,7 @@ CSS
 JavaScript
 
 ⭐ Configuración:
-1. Clona el repositorio: git clone https://github.com/tu-usuario/factic-useless-facts.git
+1. Clona el repositorio: git clone https://github.com/Sylviall81/factic-useless-facts.git
 2. Abre el archivo index.html en tu navegador web.
 3. Pon el sonido ON y disfruta del NyanSound.
 
