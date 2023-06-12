@@ -1,0 +1,1 @@
+const { printFavorite } = require('../js/functions');

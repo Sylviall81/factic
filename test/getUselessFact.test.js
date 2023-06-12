@@ -1,0 +1,1 @@
+const { getUselessFact } = require('../js/functions');
