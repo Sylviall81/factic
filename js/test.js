@@ -22,7 +22,7 @@ describe('makeSound', () => {
     // Assertion
     expect(global.document.getElementById).toHaveBeenCalledWith('audio-element-id');
     expect(playMock).toHaveBeenCalledTimes(1);
-  });
+  });push
 
   test('should not play the sound if element is not found', () => {
     // Simulate the case where getElementById returns null
