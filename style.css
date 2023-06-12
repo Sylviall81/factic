@@ -2,6 +2,7 @@
   --bg-color: #F4F0EF;
   --button-text-color: #172B4D;
   --title-color: #DC332E;
+
 }
 
 * {
@@ -13,11 +14,6 @@
 
 body {
   background-color: white;
-  width: 100vw;
-}
-
-main{
-  width: 100vw;
 }
 
 .header {
@@ -27,7 +23,7 @@ main{
   background-repeat: repeat-x;
   display: flex;
   justify-content: center;
-  background-color: var(--bg-color)
+  background-color: #F4F0EF;
 }
 
 #logo {
@@ -87,19 +83,22 @@ margin-left: 1.5%;
   justify-content: space-between;
   margin-top: -12vh;
   width: 90%;
-  max-width: 900px;
+  /*max-width: 1800px;*/
   margin-top: 3vh;
-  margin-left: 2%;
+  margin-left: 5%;
   margin-right: 2%;
 }
 
 #next-button {
-  margin-left: 27%;
+  margin-left: 70%;
+  width: 50%;
+
 }
 
 #favorites-button {
-  margin-right: 70%;
-  margin-left: 5%;
+ margin: 15px 3px 5px 0px;
+ margin-left: 2%; 
+  
 }
 
 .my-favorites-title-container {
@@ -153,7 +152,7 @@ li {
   text-align: center;
   display: flex;
   flex-direction: column;
-  background-image: url(./images/rainbow.jpg);
+  background-image: url("./images/rainbow.jpg");
   background-repeat: repeat-x;
   background-color: var(--bg-color);
   flex-direction: column-reverse;
@@ -168,6 +167,7 @@ h2 {
 }
 
 @media (max-width: 600px) {
+  
   .header {
     height: 15vh;
   }
@@ -219,10 +219,10 @@ h2 {
   }
 
   #favorites-button {
-    position: absolute;
-    margin-left: -0.1vh;
-    margin-top: 15vh;
-    margin-bottom: 5vh;
+    margin-right: 3px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 20px;
   }
 
     .button {
