@@ -47,8 +47,9 @@ function getMyFavorites() {
       favoritesList.appendChild(listItem);
   }
 
+
   module.exports = {
-    getUselessFact
+    makeSound
 };
 
 
