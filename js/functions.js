@@ -27,27 +27,34 @@ function nextFact() {
 };
 
 function getMyFavorites() {
+  
   let favoriteFact = document.getElementById('selected-useless-fact').innerText
   console.log(favoriteFact);
   arrayFavFacts.push(favoriteFact);
-  printFavorite(favoriteFact);
+  let newFavItem = arrayFavFacts[arrayFavFacts.length-1];
+
+  printFavorite(newFavItem);
+
 }
 
 
   function printFavorite(string) {
-    const favoritesList = document.getElementsByClassName('favorites-list')[0]
+    const favoritesList = document.getElementsByTagName("ul")[0]
   
       let listItem = document.createElement('li');
       listItem.className = 'list-items';
       listItem.innerText = string;
-      //listItem.textContent = array[index];
-      favoritesList.appendChild(listItem);
-  }
+          
+          favoritesList.appendChild(listItem);
+      }
+
+
+
+  
 
 
   module.exports = {
-  printFavorite
-    
+  printFavorite    
 };
 
 
