@@ -16,19 +16,7 @@ function pauseSound(id) {
 }
 
 
-
 let factPlaceHolder = document.getElementById('selected-useless-fact');
-
-/*function getUselessFact(string) {
-  fetch(string)
-    .then(response => response.json())
-    .then(data => {
-          uselessFact = data.text;
-          return uselessFact;
-    })   
-}*/
-
-//factPlaceHolder.innerHTML = getUselessFact('https://uselessfacts.jsph.pl/api/v2/facts/random')
 
 function getUselessFact() {
   fetch('https://uselessfacts.jsph.pl/api/v2/facts/random')
@@ -41,6 +29,7 @@ function nextFact() {
 };
 
 const arrayFavFacts = [];
+
 function getMyFavorites() {
 
   let favoriteFact = document.getElementById('selected-useless-fact').innerText
@@ -66,4 +55,3 @@ module.exports = {
   getMyFavorites,
   getUselessFact
 }
-
