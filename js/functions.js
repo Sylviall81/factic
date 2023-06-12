@@ -19,7 +19,6 @@ function getUselessFact() {
   fetch('https://uselessfacts.jsph.pl/api/v2/facts/random')
     .then(response => response.json())
     .then(data => factPlaceHolder.innerHTML = data.text);
-  //.then(data => console.log(data.text));
 }
 
 
@@ -37,9 +36,7 @@ function getMyFavorites() {
 
   function printFavorite(string) {
     const favoritesList = document.getElementsByClassName('favorites-list')[0]
-    //for (let i = 0; i < array.length; i++) 
-//      let index = i;
-
+  
       let listItem = document.createElement('li');
       listItem.className = 'list-items';
       listItem.innerText = string;
@@ -49,7 +46,8 @@ function getMyFavorites() {
 
 
   module.exports = {
-    makeSound
+  printFavorite
+    
 };
 
 
