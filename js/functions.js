@@ -48,3 +48,8 @@ function getMyFavorites() {
   }
 
 
+  module.exports = {
+    makeSound
+};
+
+
