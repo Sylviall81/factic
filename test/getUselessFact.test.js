@@ -1,14 +1,4 @@
 
-
-
-
-
-
-
-
-// Importa las dependencias necesarias
-//const { JSDOM } = require('jsdom');
-
 const { load } = require ("../helpers/helpers");
 
 const fetchMock = require('jest-fetch-mock');
