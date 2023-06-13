@@ -22,10 +22,6 @@ function getUselessFact() {
 }
 
 
-function nextFact() {
-  getUselessFact()
-};
-
 function getMyFavorites() {
   
   let favoriteFact = document.getElementById('selected-useless-fact').innerText
