@@ -28,7 +28,6 @@ function nextFact() {
 const arrayFavFacts = [];
 
 function getMyFavorites() {
-
   let favoriteFact = document.getElementById('selected-useless-fact').innerText
   arrayFavFacts.push(favoriteFact);
  
@@ -37,9 +36,11 @@ function getMyFavorites() {
   printFavorite(newFavItem);
 }
 
+
   function printFavorite(string) {
     const favoritesList = document.getElementsByTagName("ul")[0]
-      let listItem = document.createElement('li');
+ 
+    let listItem = document.createElement('li');
       listItem.className = 'list-items';
       listItem.textContent = string;
       

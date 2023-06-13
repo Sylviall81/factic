@@ -15,6 +15,7 @@
   "devDependencies": {
     "jest": "^29.5.0",
     "jest-environment-jsdom": "^29.5.0",
-    "jsdom": "^22.1.0"
+    "jsdom": "^22.1.0",
+    "fetch-mock": "9.11.0"
   }
 }
