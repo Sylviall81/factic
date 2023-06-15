@@ -1,6 +1,6 @@
 const { load } = require ("../helpers/helpers");
 const { printFavorite } = require('../js/functions');
-const {}
+
 
 
 // Ejemplo de prueba
