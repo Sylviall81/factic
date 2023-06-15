@@ -66,12 +66,16 @@ margin-left: 1.5vw;
 
 
 .gif-container {
+  /*position: sticky;
+  top: 45vh;*/
   margin-top: 5vh;
   display: flex;
   justify-content: center;
 }
 
 .useless-fact-container {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: center;
   padding: 5%;
@@ -79,6 +83,7 @@ margin-left: 1.5vw;
 }
 
 .icon-container {
+  background-color: white;
   padding: 10px, 10px;
   display: flex;
   justify-content: space-between;
@@ -136,7 +141,11 @@ a {
   background-color: white;
 }
 
+ul{
+  margin-bottom: 12vh;
+}
 li {
+  margin-left: 10vh;
   margin-top: 1vh;
   list-style-type: disclosure-closed;
   list-style-position: inside;

@@ -14,25 +14,19 @@ function pauseSound(id) {
 
 
 let factPlaceHolder = document.getElementById('selected-useless-fact');
-
 function getUselessFact() {
   fetch('https://uselessfacts.jsph.pl/api/v2/facts/random')
   .then(response => response.json())
   .then(data => factPlaceHolder.innerHTML = data.text)
 }
 
-function nextFact() {
-  getUselessFact()
-};
 
 const arrayFavFacts = [];
-
 function getMyFavorites() {
   let favoriteFact = document.getElementById('selected-useless-fact').innerText
   arrayFavFacts.push(favoriteFact);
  
   let newFavItem = arrayFavFacts[arrayFavFacts.length-1];
-
   printFavorite(newFavItem);
 }
 
