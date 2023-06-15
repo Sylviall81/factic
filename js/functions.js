@@ -50,7 +50,9 @@ function getMyFavorites() {
 
 
   module.exports = {
-  printFavorite    
+  printFavorite, 
+  getUselessFact,
+  getMyFavorites   
 };
 
 
